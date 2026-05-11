@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project SpaceWolf | Проект по дисциплине "Проектная деятельность"</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3a 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid #ff6600;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav a {
+            color: #ffcc88;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ff6600;
+            background: rgba(255, 102, 0, 0.2);
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffaa44;
+            text-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #ffcc88;
+            border-left: 5px solid #ff6600;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 1rem 0 0.5rem;
+            color: #ffaa66;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            margin-bottom: 2rem;
+        }
+        .hero img {
+            max-width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(255, 102, 0, 0.3);
+            margin: 1rem 0;
+        }
+        .card {
+            background: rgba(30, 30, 50, 0.7);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .model-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .model-showcase img {
+            max-width: 200px;
+            border-radius: 10px;
+            border: 1px solid #ff6600;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.6);
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+        .badge {
+            background: #ff6600;
+            color: #000;
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem 2rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">🏠 Главная</a>
+            <a href="about.html">📖 О проекте</a>
+            <a href="team.html">👥 Участники</a>
+            <a href="journal.html">📝 Журнал</a>
+            <a href="resources.html">🔗 Ресурсы</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>⚡ Project SpaceWolf ⚡</h1>
+            <p>Игра жанра космический шутер с возможностью переключения между пилотами на лету</p>
+            <img src="images/GameView.jpg" alt="Игровой процесс" onerror="this.src='https://placehold.co/800x400/1a1a3a/ff6600?text=GameView'">
+            <p><span class="badge">Главный корабль</span> Полностью смоделирован и затекстурирован</p>
+        </div>
+
+        <h2>🚀 Мой вклад — 3D-моделирование</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🛸 Модель флагманского корабля</h3>
+                <p>Полный цикл: от концепта до финальной модели в движке.</p>
+                <div class="model-showcase">
+                    <img src="images/MyShipConcept.jpg" alt="Концепт корабля">
+                    <img src="images/MyShip.png" alt="Готовая модель">
+                </div>
+            </div>
+            <div class="card">
+                <h3>🎨 Текстурирование</h3>
+                <p>Единый текстурный атлас на все 3D-объекты в игре. Оптимизация памяти и draw calls.</p>
+                <div class="model-showcase">
+                    <img src="images/Texture.jpg" alt="Текстурный атлас">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>🛸 Другие корабли</h3>
+                <div class="model-showcase">
+                    <img src="images/Ship1.jpg" alt="Корабль 1">
+                    <img src="images/Ship2.jpg" alt="Корабль 2">
+                </div>
+            </div>
+            <div class="card">
+                <h3>🏗️ Окружение</h3>
+                <div class="model-showcase">
+                    <img src="images/Environment.png" alt="Окружение">
+                    <img src="images/Houses1.png" alt="Здания 1">
+                    <img src="images/Houses2.png" alt="Здания 2">
+                </div>
+            </div>
+        </div>
+
+        <h2>📊 Ключевые результаты</h2>
+        <ul style="margin-left: 2rem;">
+            <li>✅ Создана финальная модель флагманского корабля</li>
+            <li>✅ Затекстурирован единый атлас на все 3D-объекты</li>
+            <li>✅ Оформлен репозиторий GitHub с документацией и рендерами</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Проектная практика 1 курс | 2025–2026 | Дизайн-проект игры «project SpaceWolf»</p>
+    </footer>
+</body>
+</html>
