@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал | project SpaceWolf</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3a 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            border-bottom: 2px solid #ff6600;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav a {
+            color: #ffcc88;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffaa44;
+        }
+        .post {
+            background: rgba(30, 30, 50, 0.8);
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-left: 5px solid #ff6600;
+        }
+        .post-date {
+            color: #ff8844;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+        .post h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ffcc88;
+        }
+        .post img {
+            max-width: 100%;
+            border-radius: 15px;
+            margin: 1rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.6);
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">🏠 Главная</a>
+            <a href="about.html">📖 О проекте</a>
+            <a href="team.html">👥 Участники</a>
+            <a href="journal.html">📝 Журнал</a>
+            <a href="resources.html">🔗 Ресурсы</a>
+        </nav>
+    </header>
 
+    <div class="container">
+        <h1>📝 Журнал прогресса</h1>
+        <p>Три ключевых этапа работы над 3D-моделями проекта</p>
+
+        <div class="post">
+            <div class="post-date">🗓️ 15 марта 2025</div>
+            <h3>🚀 Этап 1: Блок-аут и концепция корабля</h3>
+            <p>Начала работу над кораблём. Сделала быстрый блок-аут в Blender, чтобы утвердить силуэт и пропорции с геймдизайнером. Основные требования: читаемый силуэт на дальних дистанциях, соответствие визуала функционалу, массивный корпус в стиле «тяжёлый крейсер».</p>
+            <p>Итог: блок-аут утверждён, можно переходить к высокополигональной детализации.</p>
+        </div>
+
+        <div class="post">
+            <div class="post-date">🗓️ 5 апреля 2025</div>
+            <h3>🎨 Этап 2: Моделирование</h3>
+            <p>Завершила низкополигональную модель корабля с детализацией. Затем сделала UV-развёртку. Теперь модель готова к текстурированию.</p>
+        </div>
+
+        <div class="post">
+            <div class="post-date">🗓️ 28 апреля 2025</div>
+            <h3>🖌️ Этап 3: Текстурирование</h3>
+            <p>Затекстурировала модель, используя функции Blender. Работала с предоставленным атласом.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Проектная практика 1 курс | 2025–2026</p>
+    </footer>
+</body>
+</html>
