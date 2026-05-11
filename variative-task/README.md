@@ -7,7 +7,7 @@
 ## Результат работы
 
 - Краткая документация по данному проекту (представлена ниже)
-- Скриншоты готового результата (представлены в этой директории "BRAT_gamePlayPic_xx")
+- Скриншоты готового результата (представлены в этой директории в файлах формата "BRAT_gamePlayPic_xx.png")
 - [Бета-версия игры "BRAT" (Google Диск)](https://drive.google.com/file/d/1oypJMYpLdJ8b3cC3Rpi5pSrJBa8AUczZ/view?usp=drive_link)
 - [Видео-демонстрация геймплея игры "BRAT" (Google Диск)](https://drive.google.com/file/d/14ygff62zvlsmeYfOdRn7oqpSpOtg2UBr/view?usp=drive_link)
 
