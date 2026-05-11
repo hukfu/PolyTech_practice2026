@@ -1,4 +1,4 @@
 ## Документация
 
-- [Отчёт по практике](./reports/report_AVA.docx)
-- [PDF-версия отчёта](./reports/report_AVA.pdf)
+- [Отчёт по практике](./report_AVA.docx)
+- [PDF-версия отчёта](./report_AVA.pdf)
