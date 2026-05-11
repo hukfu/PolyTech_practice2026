@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники | project SpaceWolf</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3a 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            border-bottom: 2px solid #ff6600;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav a {
+            color: #ffcc88;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffaa44;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: #ffcc88;
+            border-left: 5px solid #ff6600;
+            padding-left: 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .member-card {
+            background: rgba(30, 30, 50, 0.8);
+            border-radius: 20px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .member-card.highlight {
+            border: 3px solid #ff6600;
+            background: rgba(255, 102, 0, 0.15);
+            transform: scale(1.02);
+        }
+        .member-card h3 {
+            font-size: 1.5rem;
+            color: #ffaa44;
+            margin-bottom: 0.5rem;
+        }
+        .role {
+            color: #ff8844;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .contribution {
+            text-align: left;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        .team-list {
+            background: rgba(30, 30, 50, 0.7);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .team-list h3 {
+            color: #ffaa44;
+            margin-bottom: 0.5rem;
+        }
+        .team-list ul {
+            margin-left: 1.5rem;
+        }
+        .team-list li {
+            margin: 0.5rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.6);
+            margin-top: 3rem;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">🏠 Главная</a>
+            <a href="about.html">📖 О проекте</a>
+            <a href="team.html">👥 Участники</a>
+            <a href="journal.html">📝 Журнал</a>
+            <a href="resources.html">🔗 Ресурсы</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>👥 Участники команды</h1>
+        <p>Над «project SpaceWolf» работает небольшая, но сплочённая команда. Мой вклад — 3D-моделирование.</p>
+      
+        <div class="team-list">
+            <h3>Состав команды:</h3>
+            <ul>
+                <li>Астафьева Виола Александровна — дизайнер</li>
+                <li>Бурукина Софья Вячеславовна — дизайнер</li>
+                <li>Верицов Михаил Евгеньевич — программист</li>
+                <li>Дерновой Егор Дмитриевич — программист</li>
+                <li>Кодзаев Николай Петрович — бригадир</li>
+                <li>Косарпур Киана — дизайнер</li>
+                <li>Лучкин Никита Андреевич — программист</li>
+                <li>Маракасов Данил Евгеньевич — программист</li>
+                <li>Неклюдов Владислав Алексеевич — бригадир</li>
+                <li>Нетылева Кристина Александровна — дизайнер</li>
+                <li>Ноурузи Мехди — программист</li>
+                <li>Орлов Артём Евгеньевич — геймдизайнер</li>
+                <li>Пронякин Роман Вадимович — геймдизайнер</li>
+                <li>Прудников Павел Ильич — геймдизайнер</li>
+                <li>Пугина Елизавета Сергеевна — геймдизайнер</li>
+                <li>Федосов Егор Михайлович — дизайнер</li>
+                <li>Филиппов Демьян Олегович — тим-лид</li>
+                <li>Фомин Владимир Сергеевич — дизайнер</li>
+                <li>Челнокова Арина Максимовна — дизайнер</li>
+                <li>Шарапова Глафира Сергеевна — дизайнер</li>
+                <li>Якимов Рустам — дизайнер</li>
+            </ul>
+        </div>
+
+        <div class="grid">
+            <div class="member-card highlight">
+                <h3>⭐ Астафьева Виола Александровна</h3>
+                <div class="role">3D-художник / Художник текстурирования</div>
+                <div class="contribution">
+                    <strong>Личный вклад:</strong>
+                    <ul style="margin-left: 1rem; margin-top: 0.5rem;">
+                        <li>Полный цикл моделирования одного из кораблей</li>
+                        <li>Текстурирование прочих моделей (Substance Painter)</li>
+                        <li>UV-развёртка</li>
+                        <li>Создание статического сайта для презентации</li>
+                        <li>Оформление репозитория GitHub</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+    <footer>
+        <p>Проектная практика 1 курс | 2025–2026</p>
+    </footer>
+</body>
+</html>
